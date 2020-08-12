@@ -1,0 +1,118 @@
+/* footer*/
+
+.footer {
+  color: var(--primary-white-color);
+  background-color: var(--background-footer);
+  font-size: 14px;
+  line-height: 1.14;
+}
+.footer-container {
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-adress {
+  margin-right: 69px;
+}
+
+.footer-adress-container {
+  width: 231px;
+  height: 81px;
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.footer-adress-list {
+  line-height: 1.71;
+  font-style: normal;
+}
+
+.footer-adress-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.adress-item {
+  color: var(--primary-white-color);
+}
+.contact-item {
+  color: var(--footer-white);
+}
+
+.footer-social-container {
+  margin-top: 12px;
+  margin-right: 94px;
+  width: 206px;
+  height: 80px;
+}
+
+.footer-description {
+  display: block;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.footer-social-list {
+  display: flex;
+}
+
+.footer .nav-contacts-link {
+  background-color: var(--background-footer-social);
+}
+
+.footer-social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-form {
+  /* display: flex; */
+
+  margin-top: 12px;
+
+  width: 570px;
+  height: 86px;
+}
+
+.email-form {
+  display: flex;
+  align-items: center;
+}
+
+.user-email-input {
+  width: 358px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 1.25;
+  padding-left: 16px;
+  background-color: transparent;
+  /* display: flex;
+  align-items: center; */
+
+  border: 1px solid var(--primary-text-color);
+  border-radius: 4px;
+  color: var(--footer-white);
+  outline: none;
+  border: 1px solid var(--border-footer-form);
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+
+.footer-form-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: 12px;
+  width: 200px;
+  height: 50px;
+  border-style: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background-color: var(--accent-color);
+}
+
+.icon-send-svg {
+  fill: var(--primary-white-color);
+  margin-left: 10px;
+}
