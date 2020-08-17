@@ -1,7 +1,7 @@
 /* team */
 
 .team {
-  background-color: var(--background-button);
+  background-color: $background-button;
 }
 
 .team-list {
@@ -23,7 +23,7 @@
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
-  background-color: var(--primary-white-color);
+  background-color: $primary-white-color;
 }
 .team-profile:not(:last-child) {
   margin-right: 30px;
@@ -59,11 +59,11 @@
 }
 
 .social-team-item .social-img {
-  fill: var(--sprite-color);
+  fill: $sprite-color;
 }
 
 .social-img {
-  fill: var(--primary-white-color);
+  fill: $primary-white-color;
   display: block;
   width: 20px;
   height: 20px;
@@ -71,7 +71,7 @@
 
 .nav-contacts-link:hover .social-img,
 .nav-contacts-link:focus .social-img {
-  fill: var(--primary-white-color);
+  fill: $primary-white-color;
 }
 
 .social-team-list-links .social-team-item:not(:last-child) {
@@ -85,7 +85,7 @@
 }
 
 .team-member {
-  color: var(--title-text-color);
+  color: $title-text-color;
   font-weight: 500;
 }
 

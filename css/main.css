@@ -1,28 +1,7 @@
-:root {
-  --primary-font-family: "roboto", sans-serif;
-  --secondary-font-family: "raleway", sans-serif;
-  --primary-text-color: #757575;
-  --title-text-color: #212121;
-  --accent-color: #2196f3;
-  --logo-color: #000000;
-  --primary-white-color: #ffffff;
-  --footer-white: rgba(255, 255, 255, 0.6);
-  --border-footer-form: rgba(255, 255, 255, 0.3);
-  --backgroung-second: #afb1b8;
-  --background-footer: #2f303a;
-  --background-footer-social: rgba(255, 255, 255, 0.1);
-  --background-button: #f5f4fa;
-  --background-portfolio-item: #eeeeee;
-  --background-services: rgba(47, 48, 58, 0.8);
-  --backgroung-hero: rgba(47, 48, 58, 0.8);
-  --background-overlay: rgba(33, 150, 243, 0.9);
-  --sprite-color: #afb1b8;
-}
-
 body {
-  background-color: var(--primary-white-color);
-  color: var(--primary-text-color);
-  font-family: var(--primary-font-family);
+  background-color: #ffffff;
+  color: #757575;
+  font-family: "roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: 0.03em;
@@ -51,26 +30,364 @@ html {
   text-decoration: none;
 }
 
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+     ========================================================================== */
+/**
+   * Remove the margin in all browsers.
+   */
+body {
+  margin: 0;
+}
+
+/**
+   * Render the `main` element consistently in IE.
+   */
+main {
+  display: block;
+}
+
+/**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+     ========================================================================== */
+/**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+     ========================================================================== */
+/**
+   * Remove the gray background on active links in IE 10.
+   */
+a {
+  background-color: transparent;
+}
+
+/**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+   * Add the correct font size in all browsers.
+   */
+small {
+  font-size: 80%;
+}
+
+/**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+     ========================================================================== */
+/**
+   * Remove the border on images inside links in IE 10.
+   */
+img {
+  border-style: none;
+}
+
+/* Forms
+     ========================================================================== */
+/**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+   * Remove the inner border and padding in Firefox.
+   */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+   * Restore the focus styles unset by the previous rule.
+   */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+   * Correct the padding in Firefox.
+   */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+textarea {
+  overflow: auto;
+}
+
+/**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+     ========================================================================== */
+/*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+details {
+  display: block;
+}
+
+/*
+   * Add the correct display in all browsers.
+   */
+summary {
+  display: list-item;
+}
+
+/* Misc
+     ========================================================================== */
+/**
+   * Add the correct display in IE 10+.
+   */
+template {
+  display: none;
+}
+
+/**
+   * Add the correct display in IE 10.
+   */
+[hidden] {
+  display: none;
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  /* outline: 2px solid tomato; */
 }
 
 .title {
   margin: 0px;
-  color: var(--title-text-color);
+  color: #212121;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
 }
 
 .button {
-  background-color: var(--accent-color);
-  color: var(--primary-white-color);
+  background-color: #2196f3;
+  color: #ffffff;
   border: none;
   font-weight: bold;
   font-size: 16px;
@@ -83,9 +400,9 @@ html {
 
 /* logo */
 .logo {
-  color: var(--logo-color);
+  color: #000000;
   text-decoration: none;
-  font-family: var(--secondary-font-family);
+  font-family: "raleway", sans-serif;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
@@ -93,12 +410,12 @@ html {
 }
 
 .footer .logo {
-  color: var(--primary-white-color);
+  color: #ffffff;
 }
 
 .logo-span,
 .footer .logo-span {
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 /* modal window */
@@ -120,7 +437,7 @@ html {
   height: 581px;
   display: flex;
   flex-direction: column;
-  background-color: var(--primary-white-color);
+  background-color: #ffffff;
   padding: 40px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -136,7 +453,7 @@ html {
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
-  color: var(--title-text-color);
+  color: #212121;
 }
 
 .modal-close-btn {
@@ -147,13 +464,13 @@ html {
   height: 30px;
   border-radius: 50%;
   cursor: pointer;
-  background: var(--primary-white-color);
+  background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-btn:hover {
-  fill: var(--accent-color);
+  fill: #2196f3;
 }
 
 .modal-form-input-wrapper {
@@ -176,7 +493,7 @@ html {
   border: 1px solid #2196f3;
   border-radius: 4px;
   padding-left: 42px;
-  color: var(--accent-color);
+  color: #2196f3;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -189,7 +506,7 @@ html {
 .modal-form-message {
   display: block;
   width: 100%;
-  font-family: var(--primary-font-family);
+  font-family: "roboto", sans-serif;
   font-weight: 600;
   font-size: 11px;
   letter-spacing: 0.1em;
@@ -208,7 +525,7 @@ html {
   padding-bottom: 12px;
   padding-right: 16px;
   resize: none;
-  color: var(--accent-color);
+  color: #2196f3;
   font-size: 14px;
   line-height: 1, 14;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -220,7 +537,7 @@ html {
 .modal-form-message:focus,
 .modal-form-input:not(:placeholder-shown),
 .modal-form-message:not(:placeholder-shown) {
-  border-color: var(--accent-color);
+  border-color: #2196f3;
 }
 
 .modal-form-label {
@@ -228,19 +545,19 @@ html {
   top: 50%;
   left: 42px;
   transform: translateY(-50%);
-  font-family: var(--primary-font-family);
+  font-family: "roboto", sans-serif;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.1em;
-  color: var(--primary-text-color);
+  color: #757575;
   transition: transform 250ms linear;
 }
 
 .modal-form-input:focus + .modal-form-label,
 .modal-form-input:not(:placeholder-shown) + .modal-form-label {
   transform: translate(-40px, -40px);
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .modal-form-message-upper {
@@ -249,7 +566,7 @@ html {
   transform: translateY(-150%);
   position: absolute;
   font-size: 12px;
-  color: var(--primary-text-color);
+  color: #757575;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -269,8 +586,6 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* margin-left: auto;
-  margin-right: auto; */
   margin-bottom: 30px;
 }
 
@@ -286,11 +601,11 @@ html {
 .modal-form-option-span {
   font-size: 14px;
   line-height: 1.7;
-  color: var(--primary-text-color);
+  color: #757575;
 }
 
 .modal-form-option-span a {
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .modal-svg {
@@ -302,33 +617,33 @@ html {
   transform: translate(-50%, -50%);
   background-size: contain;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  fill: var(--title-text-color);
+  fill: #212121;
 }
 
 .checkbox-svg {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-size: contain;
   /* opacity: 0; */
-  fill: var(--primary-white-color);
+  fill: #ffffff;
 }
 
 .modal-form-input:focus ~ .modal-svg,
 .modal-form-input:not(:placeholder-shown) ~ .modal-svg {
-  fill: var(--accent-color);
+  fill: #2196f3;
 }
 
 .modal-form-checkbox:checked + .modal-form-custom-checkbox {
-  background-color: var(--accent-color);
+  background-color: #2196f3;
   outline: none;
   background-origin: border-box;
 }
 
 .modal-form-checkbox:focus .modal-svg {
-  fill: var(--accent-color);
+  fill: #2196f3;
 }
 
 .modal-form-checkbox:checked .checkbox-svg {
-  fill: var(--primary-white-color);
+  fill: #ffffff;
   /* opacity: 1; */
 }
 
@@ -336,7 +651,7 @@ html {
   display: block;
   margin-right: auto;
   margin-left: auto;
-  color: var(--primary-white-color);
+  color: #ffffff;
   width: 200px;
   height: 50px;
   border-style: none;
@@ -345,7 +660,6 @@ html {
   border-radius: 4px;
   outline: none;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  /* border: 1px solid var(--sprite-color); */
 }
 
 .modal-form-btn:hover,
@@ -382,7 +696,7 @@ html {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-  color: var(--title-text-color);
+  color: #212121;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -412,7 +726,7 @@ html {
 }
 
 .header-icon-mail-svg {
-  fill: var(--sprite-color);
+  fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 16px;
   height: 11px;
@@ -420,7 +734,7 @@ html {
 }
 
 .header-icon-phone-svg {
-  fill: var(--sprite-color);
+  fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 10px;
   height: 15px;
@@ -431,8 +745,8 @@ html {
 .nav-contacts-item:hover .header-icon-phone-svg,
 .nav-contacts-link:focus .header-icon-mail-svg,
 .nav-contacts-link:focus .header-icon-phone-svg {
-  fill: var(--accent-color);
-  fill: var(--accent-color);
+  fill: #2196f3;
+  fill: #2196f3;
 }
 
 .main-page::after {
@@ -440,7 +754,7 @@ html {
   content: "";
   height: 4px;
   border-radius: 2px;
-  background: var(--accent-color);
+  background: #2196f3;
 }
 
 .site-link:hover,
@@ -448,22 +762,22 @@ html {
 .nav-contacts-link:hover,
 .nav-contacts-link:focus,
 .site-nav .current-site {
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .button-item:hover,
 .button-item:focus,
 .portfolio-list-description:hover {
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
+  color: #ffffff;
+  background-color: #2196f3;
 }
 
 .team .nav-contacts-link:hover,
 .team .nav-contacts-link:focus,
 .footer .nav-contacts-link:focus,
 .footer .nav-contacts-link:hover {
-  background-color: var(--accent-color);
-  fill: var(--sprite-color);
+  background-color: #2196f3;
+  fill: #afb1b8;
 }
 
 .nav-contacts {
@@ -474,7 +788,7 @@ html {
 }
 
 .nav-contacts-link {
-  color: var(--primary-text-color);
+  color: #757575;
   text-decoration: none;
   font-style: normal;
 }
@@ -492,7 +806,7 @@ html {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(var(--backgroung-hero), var(--backgroung-hero)), url("../images/hero/hero-img.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../images/hero/hero-img.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
@@ -507,7 +821,7 @@ html {
   text-align: center;
   margin-top: 0px;
   margin-bottom: 30px;
-  color: var(--primary-white-color);
+  color: #ffffff;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -559,13 +873,13 @@ html {
   width: 270px;
   height: 120px;
   border-radius: 4px;
-  background-color: var(--background-button);
+  background-color: #f5f4fa;
 }
 
 .principles-title {
   margin-top: 0px;
   margin-bottom: 10px;
-  color: var(--title-text-color);
+  color: #212121;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
@@ -609,8 +923,8 @@ html {
   font-size: 14px;
   /* line-height: 1.14px; */
   text-transform: uppercase;
-  color: var(--primary-white-color);
-  background-color: var(--background-services);
+  color: #ffffff;
+  background-color: rgba(47, 48, 58, 0.8);
 }
 
 .service-item:not(:last-child) {
@@ -619,7 +933,7 @@ html {
 
 /* team */
 .team {
-  background-color: var(--background-button);
+  background-color: #f5f4fa;
 }
 
 .team-list {
@@ -640,7 +954,7 @@ html {
   padding-bottom: 24px;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
-  background-color: var(--primary-white-color);
+  background-color: #ffffff;
 }
 
 .team-profile:not(:last-child) {
@@ -678,11 +992,11 @@ html {
 }
 
 .social-team-item .social-img {
-  fill: var(--sprite-color);
+  fill: #afb1b8;
 }
 
 .social-img {
-  fill: var(--primary-white-color);
+  fill: #ffffff;
   display: block;
   width: 20px;
   height: 20px;
@@ -690,7 +1004,7 @@ html {
 
 .nav-contacts-link:hover .social-img,
 .nav-contacts-link:focus .social-img {
-  fill: var(--primary-white-color);
+  fill: #ffffff;
 }
 
 .social-team-list-links .social-team-item:not(:last-child) {
@@ -704,7 +1018,7 @@ html {
 }
 
 .team-member {
-  color: var(--title-text-color);
+  color: #212121;
   font-weight: 500;
 }
 
@@ -739,31 +1053,31 @@ html {
   align-items: center;
   width: 170px;
   height: 90px;
-  border: 1px solid var(--backgroung-second);
+  border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-svg {
-  fill: var(--sprite-color);
+  fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:hover .clients-svg,
 .clients-link:focus .clients-svg {
-  fill: var(--accent-color);
+  fill: #2196f3;
 }
 
 .clients-link:hover,
 .clients-link:focus {
-  border: 1px solid var(--accent-color);
+  border: 1px solid #2196f3;
 }
 
 /* footer*/
 .footer {
-  color: var(--primary-white-color);
-  background-color: var(--background-footer);
+  color: #ffffff;
+  background-color: #2f303a;
   font-size: 14px;
   line-height: 1.14;
 }
@@ -798,11 +1112,11 @@ html {
 }
 
 .adress-item {
-  color: var(--primary-white-color);
+  color: #ffffff;
 }
 
 .contact-item {
-  color: var(--footer-white);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-social-container {
@@ -823,7 +1137,7 @@ html {
 }
 
 .footer .nav-contacts-link {
-  background-color: var(--background-footer-social);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .footer-social-item:not(:last-child) {
@@ -851,11 +1165,11 @@ html {
   background-color: transparent;
   /* display: flex;
   align-items: center; */
-  border: 1px solid var(--primary-text-color);
+  border: 1px solid #757575;
   border-radius: 4px;
-  color: var(--footer-white);
+  color: rgba(255, 255, 255, 0.6);
   outline: none;
-  border: 1px solid var(--border-footer-form);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
@@ -869,11 +1183,11 @@ html {
   border-style: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  background-color: var(--accent-color);
+  background-color: #2196f3;
 }
 
 .icon-send-svg {
-  fill: var(--primary-white-color);
+  fill: #ffffff;
   margin-left: 10px;
 }
 
@@ -890,8 +1204,8 @@ html {
   border-style: none;
   line-height: 1, 62;
   text-align: center;
-  color: var(--title-text-color);
-  background-color: var(--background-button);
+  color: #212121;
+  background-color: #f5f4fa;
 }
 
 .portfolio-button:not(:last-child) {
@@ -956,7 +1270,7 @@ html {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--title-text-color);
+  color: #212121;
   /* outline: 2px solid blue; */
 }
 
@@ -964,7 +1278,7 @@ html {
   margin: 0px;
   font-size: 16px;
   line-height: 1.87;
-  color: var(--primary-text-color);
+  color: #757575;
   /* outline: 2px solid orange; */
 }
 
@@ -975,10 +1289,10 @@ html {
   padding-bottom: 20px;
   padding-left: 24px;
   padding-right: 24px;
-  background: var(--primary-white-color);
-  border-right: 1px solid var(--background-portfolio-item);
-  border-bottom: 1px solid var(--background-portfolio-item);
-  border-left: 1px solid var(--background-portfolio-item);
+  background: #ffffff;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
   /* outline: 2px solid violet; */
 }
 
@@ -992,7 +1306,7 @@ html {
   transform: translateY(0%);
   top: 0;
   left: 0;
-  background-color: var(--background-overlay);
+  background-color: rgba(33, 150, 243, 0.9);
 }
 
 .portfolio-list-description {
@@ -1007,8 +1321,8 @@ html {
   height: 100%;
   font-size: 18px;
   line-height: 1.56;
-  color: var(--primary-white-color);
-  background-color: var(--background-overlay);
+  color: #ffffff;
+  background-color: rgba(33, 150, 243, 0.9);
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   /* outline: 2px solid green; */
 }

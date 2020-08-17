@@ -12,8 +12,8 @@
   border-style: none;
   line-height: 1, 62;
   text-align: center;
-  color: var(--title-text-color);
-  background-color: var(--background-button);
+  color: $title-text-color;
+  background-color: $background-button;
 }
 
 .portfolio-button:not(:last-child) {

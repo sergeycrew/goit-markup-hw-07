@@ -1,11 +1,20 @@
 /* footer*/
 
 .footer {
-  color: var(--primary-white-color);
-  background-color: var(--background-footer);
+  color: $primary-white-color;
+  background-color: $background-footer;
   font-size: 14px;
   line-height: 1.14;
+  .nav-contacts-link {
+    background-color: $background-footer-social;
+  }
+  .nav-contacts-link:focus,
+  .nav-contacts-link:hover {
+    background-color: $accent-color;
+    fill: $sprite-color;
+  }
 }
+
 .footer-container {
   display: flex;
   padding-top: 60px;
@@ -14,30 +23,29 @@
 
 .footer-adress {
   margin-right: 69px;
-}
-
-.footer-adress-container {
-  width: 231px;
-  height: 81px;
+  &-container {
+    width: 231px;
+    height: 81px;
+  }
+  &-list {
+    line-height: 1.71;
+    font-style: normal;
+  }
+  &-item:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
 .footer-logo {
   display: inline-block;
   margin-bottom: 20px;
 }
-.footer-adress-list {
-  line-height: 1.71;
-  font-style: normal;
-}
 
-.footer-adress-item:not(:last-child) {
-  margin-bottom: 9px;
-}
 .adress-item {
-  color: var(--primary-white-color);
+  color: $primary-white-color;
 }
 .contact-item {
-  color: var(--footer-white);
+  color: $footer-white;
 }
 
 .footer-social-container {
@@ -57,19 +65,12 @@
   display: flex;
 }
 
-.footer .nav-contacts-link {
-  background-color: var(--background-footer-social);
-}
-
 .footer-social-item:not(:last-child) {
   margin-right: 10px;
 }
 
 .footer-form {
-  /* display: flex; */
-
   margin-top: 12px;
-
   width: 570px;
   height: 86px;
 }
@@ -86,15 +87,11 @@
   line-height: 1.25;
   padding-left: 16px;
   background-color: transparent;
-  /* display: flex;
-  align-items: center; */
-
-  border: 1px solid var(--primary-text-color);
+  border: 1px solid $primary-text-color;
   border-radius: 4px;
-  color: var(--footer-white);
+  color: $footer-white;
   outline: none;
-  border: 1px solid var(--border-footer-form);
-
+  border: 1px solid $border-footer-form;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
@@ -102,17 +99,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
   margin-left: 12px;
   width: 200px;
   height: 50px;
   border-style: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  background-color: var(--accent-color);
+  background-color: $accent-color;
 }
 
 .icon-send-svg {
-  fill: var(--primary-white-color);
+  fill: $primary-white-color;
   margin-left: 10px;
 }

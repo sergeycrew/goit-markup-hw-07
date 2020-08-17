@@ -8,68 +8,68 @@
 .nav-header {
   display: flex;
   align-items: center;
-  /* padding-top: 24px;
-  padding-bottom: 25px; */
 }
 
 .nav-logo {
   margin-right: 85px;
 }
 
-.site-nav .site-link {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-
-  color: var(--title-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .site-nav {
   display: flex;
+  .site-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: $title-text-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    @extend %transition;
+  }
 }
 
 .site-nav-item:not(:last-child) {
   margin-right: 50px;
 }
 
-.nav-contacts-item:not(:last-child) {
-  margin-right: 30px;
-}
 .nav-contacts-item {
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @extend %transition;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 .nav-contacts-link {
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @extend %transition;
 }
 
 .header-icon-mail-svg {
-  fill: var(--sprite-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: $sprite-color;
+  @extend %transition;
   width: 16px;
   height: 11px;
   margin-right: 10px;
+  .nav-contacts-item:hover,
+  .nav-contacts-item:focus,
+  .nav-contacts-link:focus,
+  .nav-contacts-link:hover {
+    fill: $accent-color;
+  }
 }
 
 .header-icon-phone-svg {
-  fill: var(--sprite-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: $sprite-color;
+  @extend %transition;
   width: 10px;
   height: 15px;
   margin-right: 10px;
-}
-
-.nav-contacts-item:hover .header-icon-mail-svg,
-.nav-contacts-item:hover .header-icon-phone-svg,
-.nav-contacts-link:focus .header-icon-mail-svg,
-.nav-contacts-link:focus .header-icon-phone-svg {
-  fill: var(--accent-color);
-  fill: var(--accent-color);
+  .nav-contacts-item:hover,
+  .nav-contacts-item:focus,
+  .nav-contacts-link:focus,
+  .nav-contacts-link:hover {
+    fill: $accent-color;
+  }
 }
 
 .main-page::after {
@@ -77,7 +77,7 @@
   content: "";
   height: 4px;
   border-radius: 2px;
-  background: var(--accent-color);
+  background: $accent-color;
 }
 
 .site-link:hover,
@@ -85,38 +85,35 @@
 .nav-contacts-link:hover,
 .nav-contacts-link:focus,
 .site-nav .current-site {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .button-item:hover,
 .button-item:focus,
 .portfolio-list-description:hover {
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
+  color: $primary-white-color;
+  background-color: $accent-color;
 }
 
-.team .nav-contacts-link:hover,
-.team .nav-contacts-link:focus,
-.footer .nav-contacts-link:focus,
-.footer .nav-contacts-link:hover {
-  background-color: var(--accent-color);
-  fill: var(--sprite-color);
-}
-
-.nav-contacts {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.4;
-  letter-spacing: 0.02em;
-}
-.nav-contacts-link {
-  color: var(--primary-text-color);
-  text-decoration: none;
-  font-style: normal;
+.team {
+  .nav-contacts-link:hover,
+  .nav-contacts-link:focus {
+    background-color: $accent-color;
+    fill: $sprite-color;
+  }
 }
 
 .nav-contacts {
   display: flex;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  &-link {
+    color: $primary-text-color;
+    text-decoration: none;
+    font-style: normal;
+  }
 }
 
 .nav-adress {

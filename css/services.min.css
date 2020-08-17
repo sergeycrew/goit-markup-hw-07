@@ -1,2 +1,0 @@
-.service-list{display:flex;margin-top:50px}.service-container{padding-bottom:94px}.service-container-overlay{position:relative}.service-img{display:block}.service-title{position:absolute;bottom:0;width:370px;height:70px;margin:0px;padding-top:27px;padding-bottom:27px;text-align:center;font-size:14px;text-transform:uppercase;color:var(--primary-white-color);background-color:var(--background-services)}.service-item:not(:last-child){margin-right:30px}
-/*# sourceMappingURL=services.min.css.map */

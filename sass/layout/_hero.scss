@@ -4,10 +4,7 @@
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(
-      var(--backgroung-hero),
-      var(--backgroung-hero)
-    ),
+  background-image: linear-gradient($backgroung-hero, $backgroung-hero),
     url("../images/hero/hero-img.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -24,7 +21,7 @@
   margin-top: 0px;
   margin-bottom: 30px;
 
-  color: var(--primary-white-color);
+  color: $primary-white-color;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
