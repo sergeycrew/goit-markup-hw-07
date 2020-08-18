@@ -7,6 +7,13 @@
   line-height: 1.14;
   .nav-contacts-link {
     background-color: $background-footer-social;
+    display: block;
+    padding: 12px;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    left: 247px;
+    top: 2139px;
   }
   .nav-contacts-link:focus,
   .nav-contacts-link:hover {

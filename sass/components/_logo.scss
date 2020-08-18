@@ -1,7 +1,7 @@
 /* logo */
 
 .logo {
-  color: $logo-color;
+  @include logocolor($logo-color);
   text-decoration: none;
   font-family: $secondary-font-family;
   font-weight: bold;
@@ -10,11 +10,9 @@
   letter-spacing: 0.03em;
 
   .footer & {
-    color: $primary-white-color;
+    @include logocolor($primary-white-color);
   }
-}
-
-.logo-span,
-.footer & {
-  color: $accent-color;
+  .logo-span {
+    @include logocolor($accent-color);
+  }
 }

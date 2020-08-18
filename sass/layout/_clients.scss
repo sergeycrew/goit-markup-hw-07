@@ -30,13 +30,13 @@
   &:focus {
     border: 1px solid $accent-color;
   }
+  &:hover .clients-svg,
+  &:focus .clients-svg {
+    fill: $accent-color;
+  }
 }
 
 .clients-svg {
   fill: $sprite-color;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  .clients-link:hover,
-  .clients-link:focus {
-    fill: $accent-color;
-  }
 }

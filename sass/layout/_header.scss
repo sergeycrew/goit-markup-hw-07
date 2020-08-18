@@ -39,9 +39,24 @@
   &:not(:last-child) {
     margin-right: 30px;
   }
+  &:hover .header-icon-phone-svg,
+  &:focus .header-icon-phone-svg,
+  &:hover .header-icon-mail-svg,
+  &:focus .header-icon-mail-svg {
+    fill: $accent-color;
+  }
 }
-.nav-contacts-link {
+.social-contacts-link {
   @extend %transition;
+  &:hover .header-icon-phone-svg,
+  &:focus .header-icon-phone-svg,
+  &:hover .header-icon-mail-svg,
+  &:focus .header-icon-mail-svg,
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+    color: $accent-color;
+  }
 }
 
 .header-icon-mail-svg {
@@ -50,12 +65,6 @@
   width: 16px;
   height: 11px;
   margin-right: 10px;
-  .nav-contacts-item:hover,
-  .nav-contacts-item:focus,
-  .nav-contacts-link:focus,
-  .nav-contacts-link:hover {
-    fill: $accent-color;
-  }
 }
 
 .header-icon-phone-svg {
@@ -64,12 +73,6 @@
   width: 10px;
   height: 15px;
   margin-right: 10px;
-  .nav-contacts-item:hover,
-  .nav-contacts-item:focus,
-  .nav-contacts-link:focus,
-  .nav-contacts-link:hover {
-    fill: $accent-color;
-  }
 }
 
 .main-page::after {
@@ -103,7 +106,8 @@
   }
 }
 
-.nav-contacts {
+.nav-contacts,
+.social-contacts {
   display: flex;
   font-weight: 500;
   font-size: 14px;
